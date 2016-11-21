@@ -1,0 +1,43 @@
+// This is a manifest file that'll be compiled into application.js, which will include all the files
+// listed below.
+//
+// Any JavaScript/Coffee file within this directory, lib/assets/javascripts, vendor/assets/javascripts,
+// or any plugin's vendor/assets/javascripts directory can be referenced here using a relative path.
+//
+// It's not advisable to add code directly here, but if you do, it'll appear at the bottom of the
+// compiled file.
+//
+// Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
+// about supported directives.
+//
+//= require jquery
+//= require jquery-migrate-min
+//= require jquery_ujs
+//= require jquery.validate
+//= require jquery.validate.additional-methods
+//= require_tree .
+//= require bootstrap-sprockets
+//= require main
+//= require animation
+//= require jquery.mobile
+
+//= require_tree ../../../vendor/assets/javascripts/plugins/detectmobilebrowser
+//= require_tree ../../../vendor/assets/javascripts/plugins/isotope
+//= require_tree ../../../vendor/assets/javascripts/plugins/jquery-backstretch
+//= require_tree ../../../vendor/assets/javascripts/plugins/jquery-countdown
+//= require_tree ../../../vendor/assets/javascripts/plugins/jquery-countTo
+//= require_tree ../../../vendor/assets/javascripts/plugins/jquery-easing
+//= require_tree ../../../vendor/assets/javascripts/plugins/jquery-easypiechart
+//= require_tree ../../../vendor/assets/javascripts/plugins/jquery-inview
+//= require_tree ../../../vendor/assets/javascripts/plugins/jquery-magnificPopup
+//= require_tree ../../../vendor/assets/javascripts/plugins/jquery-mbYTPlayer
+//= require_tree ../../../vendor/assets/javascripts/plugins/jquery-sticky
+//= require_tree ../../../vendor/assets/javascripts/plugins/owl-carousel
+//= require_tree ../../../vendor/assets/javascripts/plugins/skrollr
+//= require_tree ../../../vendor/assets/javascripts/plugins/smartresize
+//= require_tree ../../../vendor/assets/javascripts/plugins/jquery-vide
+
+
+
+
+

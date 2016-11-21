@@ -1,0 +1,29 @@
+// Place all the styles related to the Welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+// position: absolute; z-index: -1; top: 0px; left: 0px; bottom: 0px; right: 0px; overflow: hidden; background-size: cover; background-color: transparent; background-repeat: no-repeat; background-position: 50% 50%; background-image: none;
+
+
+// margin: auto;position: absolute;z-index: -1;top: 50%;left: 50%;transform: translate(-50%, -50%);visibility: visible;opacity: 1;width: auto;height: 1166px;
+
+// data-vide-bg="mp4: <%= asset_path('video-bg.mp4')%>, ogv: <%= asset_path('video-bg.ogv')%>, webm: <%= asset_path('video-bg.webm')%>, poster: <%= asset_path('video-bg.jpg')%>" data-vide-options="posterType: jpg, loop: false, muted: true, position: 0% 0%"
+#intro {
+  height: 1170px;
+  width: 100%;
+}
+
+#video-container {
+  position: absolute; 
+  overflow: hidden;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#video-container .video {
+  z-index: -1; 
+  min-width: 100%;
+  min-height: 100%;
+}
