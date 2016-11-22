@@ -20,6 +20,13 @@
 //= require main
 //= require animation
 //= require jquery.mobile
+//= require component/counters
+//= require component/countdown
+//= require component/animation
+//= require component/bar-chart
+//= require component/pie-chart
+//= require component/portfolio
+//= require component/testimonials
 
 //= require_tree ../../../vendor/assets/javascripts/plugins/detectmobilebrowser
 //= require_tree ../../../vendor/assets/javascripts/plugins/isotope
