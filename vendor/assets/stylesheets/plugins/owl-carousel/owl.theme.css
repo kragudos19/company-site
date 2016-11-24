@@ -77,3 +77,8 @@
 	min-height: 150px;
 	background: url(AjaxLoader.gif) no-repeat center center
 }
+
+.owl-theme {
+	z-index: 100;
+	opacity: 0.0;
+}

@@ -9,38 +9,13 @@
     <meta name="description" content="">    
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= stylesheet_link_tag 'application', media: 'all' %>
     <%= csrf_meta_tags %>
 
     <!-- Google Font -->
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
 
-    <!-- Bootstrap Core CSS 
-    <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    -->
-  <!-- Plugins CSS 
-    <link href="assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
-    <link href="assets/plugins/animate-css/animate.min.css" rel="stylesheet" type="text/css">
-    <link href="assets/plugins/owl-carousel/owl.carousel.css" rel="stylesheet" type="text/css">
-    <link href="assets/plugins/owl-carousel/owl.theme.css" rel="stylesheet" type="text/css">
-    <link href="assets/plugins/jquery-magnificPopup/magnific-popup.css" rel="stylesheet" type="text/css">
--->
-    <!-- Component CSS 
-    <link href="assets/css/component/component.css" rel="stylesheet" type="text/css">
-    -->
-    <!-- Main CSS 
-    <link href="assets/css/rinjani.css" rel="stylesheet" type="text/css">
-    -->
-    <!-- Color CSS -->
-    <!--<link href="assets/css/colors/blue.css" rel="stylesheet" type="text/css">-->
-    <!--<link href="assets/css/component/colors/blue.css" rel="stylesheet" type="text/css">-->
-    
-    <!-- Modernizr JS for IE9 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-    <script src="assets/plugins/modernizr.min.js"></script>
-    <![endif]-->
 </head>
 
 <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
@@ -59,15 +34,73 @@
     </div>
     <!-- //End Page Loader -->
     
+
+ <!-- Begin Navbar -->
+    <nav id="navigation" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-rj-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                
+                <a class="navbar-brand" href="#page-top">Vinatech</a>
+            </div>
+            <!-- //.navbar-header -->
+            
+            <div class="navbar-collapse collapse navbar-rj-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="page-scroll">
+                        <a href="#about-us">About</a>
+                    </li>
+
+                    <li class="page-scroll">
+                        <a href="#our-services">Services</a>
+                    </li>
+                    
+                    <li class="page-scroll">
+                        <a href="#get-a-quote">Get a Quote</a>
+                    </li>
+                    
+                    <li class="page-scroll">
+                        <a href="#gallery">Gallery</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <!-- //.navbar-collapse -->
+        </div>
+        <!-- //.container -->
+    </nav>
+    <!-- //End Navbar -->
+
     <!-- Begin Intro Section -->
     <section id="intro">
         <div id="video-container">
-            <video class="video" loop="true" muted="true" autoplay="true">
-                <source src="<%= asset_path('video-bg.mp4')%>" type="video/mp4">
-                <source src="<%= asset_path('video-bg.ogv')%>" type="video/ogv">
-                <source src="<%= asset_path('video-bg.webm')%>" type="video/webm">
-            </video>
+            <div class="video">
+                <div id="carousel-intro-section" class="owl-carousel owl-theme">
+                    <div class="item">
+                        <img src="<%= asset_path('full_1.jpg')%>" alt="" class="img-responsive img-rounded"/>
+                    </div>
+                    <!-- //.item -->
+
+                    <div class="item">
+                        <img src="<%= asset_path('full_2.jpg')%>" alt="" class="img-responsive img-rounded"/>
+                    </div>
+                    <!-- //.item -->
+
+                    <div class="item">
+                        <img src="<%= asset_path('full_3.jpg')%>" alt="" class="img-responsive img-rounded"/>
+                    </div>
+                    <!-- //.item -->
+                </div>
+                <!-- //.owl-carousel -->
+            </div>
+            <!--//.col-md-12 .video-->
         </div>
+
         <div class="intro-body text-center">
             <div class="container">
                 <div class="row">
@@ -78,9 +111,9 @@
                         <!-- //.logo -->
                         
                         <div class="intro-text text-center">
-                            <h2>Clean, Awesome and Multi-Purpose.</h2>
+                            <!-- <h2>Clean, Awesome and Multi-Purpose.</h2> -->
 
-                            <p class="lead">Responsive Multi-Purpose Theme For Running Serious Business</p>
+                            <p class="lead">Vinatech Engineering, Inc. is a full-service precision sheet metal fabrication and CNC machining facility. We offer a wide array of services to bring your idea or drawing to  nished product.</p>
                         </div>
                         <!-- //.intro-text -->
 
@@ -100,122 +133,271 @@
     <!-- //End Intro Section -->
 
 
-    <!-- Begin Navbar -->
-    <nav id="navigation" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-rj-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                
-                <a class="navbar-brand" href="#page-top">Rinjani</a>
-            </div>
-            <!-- //.navbar-header -->
-            
-            <div class="navbar-collapse collapse navbar-rj-collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="page-scroll">
-                        <a href="#who-we-are">About</a>
-                    </li>
-                    
-                    <li class="page-scroll">
-                        <a href="#our-main-skills">Skills</a>
-                    </li>
-                    
-                    <li class="page-scroll">
-                        <a href="#our-services">Services</a>
-                    </li>
-                    
-                    <li class="page-scroll">
-                        <a href="#our-latest-work">Portfolio</a>
-                    </li>
-                    
-                    <li class="page-scroll">
-                        <a href="#meet-the-team">Team</a>
-                    </li>
-                    
-                    <li class="page-scroll">
-                        <a href="#our-pricing">Pricing</a>
-                    </li>
-                    
-                    <li class="page-scroll">
-                        <a href="#contact-us">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- //.navbar-collapse -->
-        </div>
-        <!-- //.container -->
-    </nav>
-    <!-- //End Navbar -->
+   
 
 
-    <!-- Begin Who We Are Section -->
-    <section id="who-we-are" class="section">
+    <!-- Begin About Us Section -->
+    <section id="about-us" class="section">
         <div class="section-inner">
             <div class="container section-content">
                 <div class="row">
-                    <div class="col-md-12">
-                        <div class="section-title text-center">
-                            <h2 class="main-title">Who We Are?</h2>
-
-                            <h3 class="sub-title">Some Things You Should Know About Us</h3>
-
-                            <span class="section-line"></span>
+                    <div class="col-md-7 col-md-offset-1 about-us-txt">
+                        <div class="about-us-carousel">
+                            <p>Our 24,000 square foot modern facility in San Diego, California is fully computerized to provide precision sheet metal fabrication, CNC machining, welding, hardware insertion, powder coating, silk screening, and many other services. We also o er research and design including product development through the prototype process.</p>
+                            <p>Our company was formed in 1993 with the mission to provide precision parts with a fast turnaround time at a competitive rate. With over 40 years of mechanical engineering experi- ence, our employees have the e ciency and skill to deliver high-quality products and outstand- ing customer service. We currently serve a wide array of industries including defense, biotech, computer, and electronics. We serve customers big and small - from large corporations to anyone with an idea. There is no minimum requirement for our production runs.</p>
+                            <p>Please contact our San Diego headquarters for more information on precision sheet metal fabrication, CNC machining, or any of our other products and services. We o er free quotes within 24 hours as well as free local delivery and pickup.</p>
                         </div>
-                        <!-- //.section-title -->
-                    </div>
-                    <!-- //.col-md-12 -->
-                </div>
-                <!-- //.row -->
-
-                <div class="row">
-                    <div class="col-md-6">
-                        <div id="carousel-who-we-are" class="owl-carousel owl-theme">
-                            <div class="item">
-                                <img src="<%= asset_path('who-we-are-image-1.jpg')%>" alt="" class="img-responsive img-rounded"/>
-                            </div>
-                            <!-- //.item -->
-
-                            <div class="item">
-                                <img src="<%= asset_path('who-we-are-image-2.jpg')%>" alt="" class="img-responsive img-rounded"/>
-                            </div>
-                            <!-- //.item -->
-
-                            <div class="item">
-                                <img src="<%= asset_path('who-we-are-image-3.jpg')%>" alt="" class="img-responsive img-rounded"/>
-                            </div>
-                            <!-- //.item -->
-                        </div>
-                        <!-- //.owl-carousel -->
+                        <!-- //.item -->
                     </div>
                     <!-- //.col-md-6 -->
 
-                    <div class="col-md-6">
-                        <div class="who-we-are-text">
-                            <h4>A Little About Our Past</h4>
-
-                            <p>Gunung Rinjani adalah gunung yang berlokasi di Pulau Lombok, Nusa Tenggara Barat. Gunung ini merupakan gunung favorit bagi pendaki Indonesia karena keindahan pemandangannya. Gunung ini merupakan bagian dari Taman Nasional Gunung Rinjani yang memiliki luas sekitar 41.330 ha dan ini akan diusulkan penambahannya sehingga menjadi 76.000 ha ke arah barat dan timur. Secara administratif gunung ini berada dalam wilayah tiga kabupaten: Lombok Timur, Lombok Tengah dan Lombok Barat. Gunung Rinjani dengan titik tertinggi 3.726 m dpl, mendominasi sebagian besar pemandangan Pulau Lombok bagian utara. Di sebelah barat kerucut Rinjani terdapat kaldera dengan luas sekitar 3.500 m x 4.800 m, memanjang kearah timur dan barat.</p>
+                    <div class="col-md-4">
+                        <div class="about-us-text">
+                            <h1 class="main-title">Welcome</h1>
+                            <h3 class="sub-title">to Vinatech Engineering, Inc.</h3>
 
                             <div class="page-scroll">
                                 <a href="#" class="btn btn-lg btn-rj">Read More</a>
                             </div>
                             <!-- //.page-scroll -->
                         </div>
-                        <!-- //.who-we-are-text -->
+                        <!-- //.about-us-text -->
                     </div>
-                    <!-- //.col-md-6 -->
+                    <!-- //.col-md-4 -->
                 </div>
                 <!-- //.row -->
+
             </div>
             <!-- //.section-content -->
+            <div id="draft-image">
+                <img style="opacity:0.2;" src="<%= asset_path('welcome_1.jpg')%>" alt="" class="img-responsive"/>       
+            </div>
         </div>
         <!-- //.section-inner -->
     </section>
-    <!-- //End Who We Are Section -->
+    <!-- //End About Us Section -->
+
+
+    <!-- Services Section -->
+    <section id="meet-the-team" class="section">
+        <div class="section-inner">
+            <div class="container section-content">
+                <div class="row">
+                   <div class="col-md-4 col-md-offset-8">
+                        <div id="services-container">
+                            <h2 class="main-title">Our Services</h2>
+                            <div class="page-scroll">
+                                <a href="#" class="btn btn-lg btn-rj">Read More</a>
+                            </div>
+                            <!-- //.page-scroll -->
+                        </div>
+                        <!-- //.services-container -->
+                    </div>
+                    <!-- //.col-md-4 -->
+                </div>    
+                <!-- //.row -->
+            </div>
+            <!--//.section-content-->
+            <div class="container-fluid">
+                <div class="row full-width">
+                    <div id="left-services" class="col-sm-12 col-md-8">
+                        <div class="row">
+                            <div id="top-services" class="col-md-12 team-item not-right-column top-column">
+                                <div class="team-element">
+                                    <div class="team-inner">
+                                        <div class="team-detail">
+                                            <div class="team-content">
+                                                <h4>At Vinatech Engineering, Inc.,</h4>
+
+                                                 <p>we get the job done right the  first time, quickly, and at an affordable rate. We offer full-service precision sheet metal fabrication in addition to CNC machining and other mechanical engineering services. No matter the size or scope of your project, the associates at our San Diego precision sheet metal fabrication shop have the experience and skill to exceed your expectations every time.</p>
+                                            </div>
+                                            <!-- //.team-content -->
+                                        </div>
+                                        <!-- //.team-detail -->
+                                    </div>
+                                    <!-- //.team-inner -->
+                                    <img src="<%= asset_path('services_1.jpg')%>" alt="" class="img-responsive"/>
+                                </div>
+                                <!-- //.team-element -->
+                            </div>
+                            <!--.top-services-->
+                        </div>
+                        <!--.row-->
+                        <div class="row bottom-services">
+                            <div id="bottom-left-services" class="col-md-6 team-item not-right-column top-column">
+                                <div class="team-element">
+                                    <div class="team-inner">
+                                        <div class="team-detail">
+                                            <div class="team-content">
+                                                <h4>Sheet Metal and Machining</h4>
+                                                <p>Our sheet metal shop is equipped with the latest equipment and technology to serve your needs. Our extensive sheet metal equipment allows us to provide precision parts with a quick turnaround. With over 14 years of experience, our sta  is able to fabricate virtually any part imaginable. Whether you are looking for a prototype or mass production, our sheet metal shop can provide you with the highest quality parts.</p>
+                                            </div>
+                                            <!-- //.team-content -->
+                                        </div>
+                                        <!-- //.team-detail -->
+                                    </div>
+                                    <!-- //.team-inner -->
+
+                                    <img src="<%= asset_path('services_3.jpg')%>" alt="" class="img-responsive"/>
+                                </div>
+                                <!-- //.team-element -->
+                            </div>
+                            <!--.bottom-left-services-->
+
+                            <div id="bottom-right-services" class="col-md-6 team-item not-right-column top-column">
+                                <div class="team-element">
+                                    <div class="team-inner">
+                                        <div class="team-detail">
+                                            <div class="team-content">
+                                                <h4>Complete Precision</h4>
+
+                                                <p>At Vinatech Engineering, we use advanced technology and equipment to produce high-quality parts to your exact specifcations. Having multiple units allows us to  fill large orders in a very short amount of time.</p>
+                                            </div>
+                                            <!-- //.team-content -->
+                                        </div>
+                                        <!-- //.team-detail -->
+                                    </div>
+                                    <!-- //.team-inner -->
+
+                                    <img src="<%= asset_path('services_2.jpg')%>" alt="" class="img-responsive"/>
+                                </div>
+                                <!-- //.team-element -->
+                            </div>
+                            <!--.bottom-left-services-->
+                        </div>
+                        <!--row-->
+                    </div>
+                    <!-- //.col-sm-12 .col-md-8-->
+
+                    <div id="right-services" class="col-sm-12 col-md-3 team-item not-right-column top-column">
+                        <div class="content-boxes style-two top-column clearfix">
+                            <ul>
+                                <li class="content-list-text">
+                                    <span class="content-boxes-icon">
+                                        <i class="fa fa-check" aria-hidden="true"></i>
+                                    </span>
+                                    <div class="content-boxes-text">
+                                        <h4>Precision Sheet Metal Fabrication</h4>             
+                                    </div>
+                                    <!-- //.content-boxes-text -->
+                                </li>
+                                <li class="content-list-text">
+                                    <span class="content-boxes-icon">
+                                        <i class="fa fa-check" aria-hidden="true"></i>
+                                    </span>
+                                    <div class="content-boxes-text">
+                                        <h4>CNC Machining</h4>             
+                                    </div>
+                                    <!-- //.content-boxes-text -->
+                                </li>
+                                <li class="content-list-text">
+                                    <span class="content-boxes-icon">
+                                        <i class="fa fa-check" aria-hidden="true"></i>
+                                    </span>
+                                    <div class="content-boxes-text">
+                                        <h4>Engineering and Design Consulting</h4>             
+                                    </div>
+                                    <!-- //.content-boxes-text -->
+                                </li>
+                                <li class="content-list-text">
+                                    <span class="content-boxes-icon">
+                                        <i class="fa fa-check" aria-hidden="true"></i>
+                                    </span>
+                                    <div class="content-boxes-text">
+                                        <h4>Research and Product Development</h4>             
+                                    </div>
+                                    <!-- //.content-boxes-text -->
+                                </li>
+                                <li class="content-list-text">
+                                    <span class="content-boxes-icon">
+                                        <i class="fa fa-check" aria-hidden="true"></i>
+                                    </span>
+                                    <div class="content-boxes-text">
+                                        <h4>Prototype Design and Fabrication </h4>             
+                                    </div>
+                                    <!-- //.content-boxes-text -->
+                                </li>
+                                <li class="content-list-text">
+                                    <span class="content-boxes-icon">
+                                        <i class="fa fa-check" aria-hidden="true"></i>
+                                    </span>
+                                    <div class="content-boxes-text">
+                                        <h4>Parts Rework</h4>             
+                                    </div>
+                                    <!-- //.content-boxes-text -->
+                                </li>
+                                <li class="content-list-text">
+                                    <span class="content-boxes-icon">
+                                        <i class="fa fa-check" aria-hidden="true"></i>
+                                    </span>
+                                    <div class="content-boxes-text">
+                                        <h4>Parts Assembly</h4>             
+                                    </div>
+                                    <!-- //.content-boxes-text -->
+                                </li>
+                                <li class="content-list-text">
+                                    <span class="content-boxes-icon">
+                                        <i class="fa fa-check" aria-hidden="true"></i>
+                                    </span>
+                                    <div class="content-boxes-text">
+                                        <h4>Welding</h4>             
+                                    </div>
+                                    <!-- //.content-boxes-text -->
+                                </li>
+                                <li class="content-list-text">
+                                    <span class="content-boxes-icon">
+                                        <i class="fa fa-check" aria-hidden="true"></i>
+                                    </span>
+                                    <div class="content-boxes-text">
+                                        <h4>Finishing</h4>             
+                                    </div>
+                                    <!-- //.content-boxes-text -->
+                                </li>
+                                <li class="content-list-text">
+                                    <span class="content-boxes-icon">
+                                        <i class="fa fa-check" aria-hidden="true"></i>
+                                    </span>
+                                    <div class="content-boxes-text">
+                                        <h4>Wet Paint and Powder Coating</h4>             
+                                    </div>
+                                    <!-- //.content-boxes-text -->
+                                </li>                           
+                                <li class="content-list-text">
+                                    <span class="content-boxes-icon">
+                                        <i class="fa fa-check" aria-hidden="true"></i>
+                                    </span>
+                                    <div class="content-boxes-text">
+                                        <h4>Silk Screening</h4>             
+                                    </div>
+                                    <!-- //.content-boxes-text -->
+                                </li> 
+                                <li class="content-list-text">
+                                    <span class="content-boxes-icon">
+                                        <i class="fa fa-check" aria-hidden="true"></i>
+                                    </span>
+                                    <div class="content-boxes-text">
+                                        <h4>Waterjet Cutting</h4>             
+                                    </div>
+                                    <!-- //.content-boxes-text -->
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- //.team-item -->
+                </div>
+                <!-- //.row -->
+            </div>
+            <!-- //.container-fluid -->
+        </div>
+        <!-- //.section-inner -->
+    </section>  
+    <!-- //End Our Services Section -->
+
+
+
+
+
+
 
 
     <!-- Begin Fun Fact Section -->
@@ -1050,117 +1232,8 @@
     <!-- //End Keep In Touch Section -->
 
 
-    <!-- Begin Meet The Team Section -->
-    <section id="meet-the-team" class="section">
-        <div class="section-inner">
-            <div class="container section-content">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="section-title text-center">
-                            <h3 class="main-title">Meet The Team</h3>
 
-                            <h4 class="sub-title">We Are Here For You</h4>
 
-                            <span class="section-line"></span>
-                        </div>
-                        <!-- //.section-title -->
-                    </div>
-                    <!-- //.col-md-12 -->
-                </div>    
-                <!-- //.row -->
-
-                <div class="row">
-                    <div class="col-sm-6 col-md-3 team-item not-right-column top-column">
-                        <div class="img-rounded team-element">
-                            <div class="team-inner">
-                                <div class="team-detail">
-                                    <div class="team-content">
-                                        <h4>Nick Carraway</h4>
-
-                                        <p>ECD / Founder</p>
-                                    </div>
-                                    <!-- //.team-content -->
-                                </div>
-                                <!-- //.team-detail -->
-                            </div>
-                            <!-- //.team-inner -->
-
-                            <img src="<%= asset_path('meet-the-team-image-1.jpg')%>" alt="" class="img-responsive img-rounded"/>
-                        </div>
-                        <!-- //.team-element -->
-                    </div>
-                    <!-- //.team-item -->
-
-                    <div class="col-sm-6 col-md-3 team-item not-right-column top-column">
-                        <div class="img-rounded team-element">
-                            <div class="team-inner">
-                                <div class="team-detail">
-                                    <div class="team-content">
-                                        <h4>Daisy Buchanan</h4>
-
-                                        <p>CEO / Co-Founder</p>                                
-                                    </div>
-                                    <!-- //.team-content -->
-                                </div>
-                                <!-- //.team-detail -->
-                            </div>
-                            <!-- //.team-inner -->
-
-                            <img src="<%= asset_path('meet-the-team-image-2.jpg')%>" alt="" class="img-responsive img-rounded"/>
-                        </div>
-                        <!-- //.team-element -->
-                    </div>
-                    <!-- //.team-item -->
-
-                    <div class="col-sm-6 col-md-3 team-item not-right-column">
-                        <div class="img-rounded team-element">
-                            <div class="team-inner">
-                                <div class="team-detail">
-                                    <div class="team-content">
-                                        <h4>Myrtle Wilson</h4>
-
-                                        <p>Creative Director</p>                                
-                                    </div>
-                                    <!-- //.team-content -->
-                                </div>
-                                <!-- //.team-detail -->
-                            </div>
-                            <!-- //.team-inner -->
-
-                            <img src="<%= asset_path('meet-the-team-image-3.jpg')%>" alt="" class="img-responsive img-rounded"/>
-                        </div>
-                        <!-- //.team-element -->
-                    </div>
-                    <!-- //.team-item -->
-
-                    <div class="col-sm-6 col-md-3 team-item">
-                        <div class="img-rounded team-element">
-                            <div class="team-inner">
-                                <div class="team-detail">
-                                    <div class="team-content">
-                                        <h4>Catherine</h4>
-
-                                        <p>Public Relation</p>                                
-                                    </div>
-                                    <!-- //.team-content -->
-                                </div>
-                                <!-- //.team-detail -->
-                            </div>
-                            <!-- //.team-inner -->
-
-                            <img src="<%= asset_path('meet-the-team-image-4.jpg')%>" alt="" class="img-responsive img-rounded"/>
-                        </div>
-                        <!-- //.team-element -->
-                    </div>
-                    <!-- //.team-item -->
-                </div>
-                <!-- //.row -->
-            </div>
-            <!-- //.section-content -->
-        </div>
-        <!-- //.section-inner -->
-    </section>  
-    <!-- //End Meet The Team Section -->
 
 
     <!-- Begin Testimonials Section -->

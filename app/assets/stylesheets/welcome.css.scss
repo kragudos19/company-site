@@ -2,17 +2,10 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-// position: absolute; z-index: -1; top: 0px; left: 0px; bottom: 0px; right: 0px; overflow: hidden; background-size: cover; background-color: transparent; background-repeat: no-repeat; background-position: 50% 50%; background-image: none;
-
-
-// margin: auto;position: absolute;z-index: -1;top: 50%;left: 50%;transform: translate(-50%, -50%);visibility: visible;opacity: 1;width: auto;height: 1166px;
-
-// data-vide-bg="mp4: <%= asset_path('video-bg.mp4')%>, ogv: <%= asset_path('video-bg.ogv')%>, webm: <%= asset_path('video-bg.webm')%>, poster: <%= asset_path('video-bg.jpg')%>" data-vide-options="posterType: jpg, loop: false, muted: true, position: 0% 0%"
-#intro {
-  height: 1170px;
+#intro, #carousel-intro-section {
+  height: 900px;
   width: 100%;
 }
-
 #video-container {
   position: absolute; 
   overflow: hidden;
@@ -21,9 +14,112 @@
   height: 100%;
   width: 100%;
 }
-
 #video-container .video {
-  z-index: -1; 
   min-width: 100%;
   min-height: 100%;
 }
+#intro .intro-body {
+  z-index: 100;
+}
+
+
+// ----------------ABOUT US---------------------//
+#about-us {
+  padding-top: 3%;
+  padding-bottom: 4%;
+}
+#draft-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.about-us-txt {
+    -ms-transform: translate(0px, 18px); /* IE 9 */
+    -webkit-transform: translate(0px, 18px); /* Safari */
+    transform: translate(0px, 18px);
+    z-index: 100;
+}
+
+#video-container img {
+  min-width: 100% !important;
+}
+
+// ----------------SERVICES CONTAINER---------------------//
+
+#meet-the-team .team-item > .team-element > .team-inner > .team-detail > .team-content > h4 {
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 200;
+  text-align: left;
+}
+#meet-the-team .team-item > .team-element > .team-inner > .team-detail > .team-content > p {
+  text-transform: none;
+  font-size: 13px;
+  font-weight: 100;
+  text-align: left;
+}
+#meet-the-team > .section-inner > .full-width {
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+@media (min-width: 1024px) {
+  #meet-the-team .team-item.not-right-column.top-column {
+    margin-bottom: 15px;
+  }
+}
+.bottom-services{
+  height: 270px;
+  overflow: hidden;
+}
+#top-services { 
+  padding-left: 0px;
+  padding-right: 0px;
+  height: 270px;
+  overflow: hidden;
+}
+#bottom-right-services {
+  padding-right: 0px;
+}
+#meet-the-team .team-item.not-right.column.top-column {
+  padding-left: 7.5px;
+}
+#bottom-left-services {
+  padding-left: 0px;
+  padding-right: 0px;  
+}
+#meet-the-team .team-item > .team-element > .team-inner > .team-detail > .team-content {
+  vertical-align: top;
+  padding: 30px 50px;
+}
+#right-services {
+  padding-left: 10px;
+  margin-right: 0px;
+  height: 555px;
+}
+#right-services ul > li {
+  list-style: none;
+}
+#right-services li > span {
+  float: left;
+}
+.content-list-text h4 {
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 0.2em;
+}
+.content-boxes-icon {
+  display: inline-block;
+  color: blue;
+}
+.content-boxes-text {
+  margin-left: 30px;
+}
+.content-list-text {
+  padding: 4px 2px 4px 2px;
+}
+
+// ----------------CONTENT BOXES CONTAINER---------------------//
+
+

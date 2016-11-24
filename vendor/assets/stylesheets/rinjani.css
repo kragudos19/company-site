@@ -18,7 +18,7 @@
 
 5. INTRO SECTION
 
-6. WHO WE ARE SECTION
+6. ABOUT US SECTION
 
 7. FUN FACT SECTION
 
@@ -281,6 +281,16 @@ p {
   -webkit-transition-delay: .5s;
   -moz-transition-delay: .5s;
   -o-transition-delay: .5s;
+}
+.delayp6 {
+  animation-delay: .6s;
+  -moz-animation-delay: .6s;
+  -webkit-animation-delay: .6s;
+  -o-animation-delay: .6s;
+  transition-delay: .6s;
+  -webkit-transition-delay: .6s;
+  -moz-transition-delay: .6s;
+  -o-transition-delay: .6s;
 }
 
 
@@ -634,34 +644,39 @@ span.navbar-trigger-close a:hover {
 
 
 /*---------------------------------------------------------------------*/
-/*  6. WHO WE ARE SECTION
+/*  6. ABOUT US SECTION
 /*---------------------------------------------------------------------*/
-#who-we-are .carousel-container {
+#about-us .carousel-container {
   padding-bottom: 40px;
 }
 @media (min-width: 1024px) {
-  #who-we-are .carousel-container {
+  #about-us .carousel-container {
     padding-bottom: 0px;
   }
 }
-#who-we-are .who-we-are-text {
+#about-us .about-us-text {
   text-align: center;
 }
 @media (min-width: 1024px) {
-  #who-we-are .who-we-are-text {
+  #about-us .about-us-text {
     text-align: left;
   }
 }
-#who-we-are .who-we-are-text > h4 {
+#about-us .about-us-text > h4 {
   font-size: 25px;
   text-transform: uppercase;
 }
-#who-we-are .who-we-are-text > p {
+#about-us .about-us-text > p {
   font-size: 18px;
 }
-#who-we-are .who-we-are-text > .page-scroll {
+#about-us .about-us-text > .page-scroll {
   padding-top: 10px;
 }
+.about-us-text {
+  opacity: 0.0;
+}
+
+
 
 
 /*---------------------------------------------------------------------*/
@@ -810,7 +825,7 @@ span.navbar-trigger-close a:hover {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
-#meet-the-team .team-item > .team-element > .team-inner {
+#meet-the-team .team-item  .team-element > .team-inner {
   position: absolute;
   top: 0;
   right: 0;
