@@ -91,7 +91,7 @@ $(function() {
     /*---------------------------------------*/
     /*  OWL CAROUSEL
     /*---------------------------------------*/
-    $('#about-us-carousel').owlCarousel({
+    $('#carousel-intro-section').owlCarousel({
         autoPlay: true,
         slideSpeed: 300,
         paginationSpeed: 400,

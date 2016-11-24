@@ -16,20 +16,26 @@ $(function(){
         /*---------------------------------------*/
         /*  ABOUT US SECTION
         /*---------------------------------------*/
-        $('#about-us-carousel').css('opacity', 0).one('inview', function(isInView){
-            console.log('carousel');
-            if (isInView) {$(this).addClass('animated fadeInLeftBig delayp1').css('opacity', 1);}
+        $('.about-us-carousel').css('opacity', 0).one('inview', function(isInView){
+            if (isInView) {$(this).addClass('animated fadeInLeft delayp5').css('opacity', 1);}
         });
         
         $('#about-us').find('.about-us-text').css('opacity', 0).one('inview', function(isInView){
-            if (isInView) {$(this).addClass('animated fadeInRightBig delayp3').css('opacity', 1);}
+            if (isInView) {$(this).addClass('animated fadeInRight delayp3').css('opacity', 1);}
         });
         
         /*---------------------------------------*/
+        /*  SERVICES SECTION
+        /*---------------------------------------*/
+        $('#services-container').css('opacity',0).one('inview',function(isInView){
+            if(isInView) {$(this).addClass('animated fadeInRight delayp3').css('opacity',1);}
+        });
+
+        /*---------------------------------------*/
         /*  CONTENT BOXES
         /*---------------------------------------*/
-        $('.content-boxes').css('opacity', 0).one('inview', function(isInView){
-            if (isInView) {$(this).addClass('animated flipInY delayp1').css('opacity', 1);}
+        $('.content-list-text').css('opacity', 0).one('inview', function(isInView){
+            if (isInView) {$(this).addClass('animated fadeInDown delayp6').css('opacity', 1);}
         });
         
         

@@ -282,6 +282,16 @@ p {
   -moz-transition-delay: .5s;
   -o-transition-delay: .5s;
 }
+.delayp6 {
+  animation-delay: .6s;
+  -moz-animation-delay: .6s;
+  -webkit-animation-delay: .6s;
+  -o-animation-delay: .6s;
+  transition-delay: .6s;
+  -webkit-transition-delay: .6s;
+  -moz-transition-delay: .6s;
+  -o-transition-delay: .6s;
+}
 
 
 /*---------------------------------------------------------------------*/
@@ -666,9 +676,7 @@ span.navbar-trigger-close a:hover {
   opacity: 0.0;
 }
 
-#about-us-carousel{
-  opacity: 0.0;
-}
+
 
 
 /*---------------------------------------------------------------------*/
@@ -817,7 +825,7 @@ span.navbar-trigger-close a:hover {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
-#meet-the-team .team-item > .team-element > .team-inner {
+#meet-the-team .team-item  .team-element > .team-inner {
   position: absolute;
   top: 0;
   right: 0;
