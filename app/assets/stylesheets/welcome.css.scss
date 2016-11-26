@@ -46,6 +46,13 @@
 }
 
 // ----------------SERVICES CONTAINER---------------------//
+@media (min-width: 1024px) {
+  .section > .section-inner .section-content {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+  }
+}
 
 #meet-the-team .team-item > .team-element > .team-inner > .team-detail > .team-content > h4 {
   text-transform: uppercase;
@@ -95,8 +102,9 @@
 }
 #right-services {
   padding-left: 10px;
+  padding-right: 0px;
   margin-right: 0px;
-  height: 555px;
+  height: 680px;
   background-color: transparent;
 }
 #right-services ul {
@@ -106,7 +114,7 @@
 #right-services ul > li {
   list-style: none;
   display: table-row;
-  height: 40px;
+  height: 43px;
 }
 #right-services ul > li:before {    
   font-family: 'FontAwesome';
@@ -127,6 +135,8 @@
 #content-boxes-text {
   background-color: #f2f4f4;
   margin-left: 7.5px;
+  padding-top: 25px;
+  height: 555px;
 }
 // ----------------CONTENT BOXES CONTAINER---------------------//
 
