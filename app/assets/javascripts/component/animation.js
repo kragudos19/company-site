@@ -13,6 +13,9 @@ $(function(){
             if (isInView) {$(this).addClass('animated flipInX delayp1').css('opacity', 1);}
         });
 
+        $('#page-loader').css('opacity', 0).one('inview', function(isInView){
+            if (isInView) {$(this).addClass('animated fadeOut delayp5').css('opacity', 1);}
+        });
         /*---------------------------------------*/
         /*  ABOUT US SECTION
         /*---------------------------------------*/
@@ -52,9 +55,9 @@ $(function(){
         /*---------------------------------------*/
         /*  COUNTERS
         /*---------------------------------------*/
-        $('.counter-item').css('opacity', 0).one('inview', function(isInView){
-            if (isInView) {$(this).addClass('animated fadeInUp delayp1').css('opacity', 1);}
-        });
+        //$('.counter-item').css('opacity', 0).one('inview', function(isInView){
+        //    if (isInView) {$(this).addClass('animated fadeInUp delayp1').css('opacity', 1);}
+        //});
         
         
         /*---------------------------------------*/
@@ -64,13 +67,15 @@ $(function(){
             if (isInView) {$(this).addClass('animated flipInY delayp1').css('opacity', 1);}
         });
         
-        
+        $('.get-a-quote-text').css('opacity', 0).one('inview', function(isInView){
+            if (isInView) {$(this).addClass('animated fadeInRight delayp1').css('opacity', 1);}
+        });
         /*---------------------------------------*/
         /*  PIE CHART
         /*---------------------------------------*/
-        $('.pie-chart-item').css('opacity', 0).one('inview', function(isInView){
-            if (isInView) {$(this).addClass('animated flipInX delayp1').css('opacity', 1);}
-        });
+        //$('.pie-chart-item').css('opacity', 0).one('inview', function(isInView){
+        //    if (isInView) {$(this).addClass('animated flipInX delayp1').css('opacity', 1);}
+        //});
         
         
         /*---------------------------------------*/

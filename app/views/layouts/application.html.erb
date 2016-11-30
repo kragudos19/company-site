@@ -28,15 +28,19 @@
     <!-- Begin Page Loader -->
     <div id="page-loader">
         <div class="preload">
-            <img src="<%= asset_path('preloader.gif')%>" alt="Loading"/>
+            <img src="<%= asset_path('preloader.svg')%>" alt="Loading"/>
         </div>
         <!-- //.preload -->
     </div>
     <!-- //End Page Loader -->
-    
+
+
 
  <!-- Begin Navbar -->
     <nav id="navigation" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="nav-info">
+                <p><span>1-800-111-1111</span></p>
+        </div>
         <div class="container">
             <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-rj-collapse">
@@ -61,13 +65,12 @@
                     </li>
                     
                     <li class="page-scroll">
-                        <a href="#get-a-quote">Get a Quote</a>
-                    </li>
-                    
-                    <li class="page-scroll">
                         <a href="#gallery">Gallery</a>
                     </li>
                     
+                    <li id="highlighted-list-item" class="page-scroll">
+                        <a href="#get-a-quote">Get a Quote</a>
+                    </li>
                 </ul>
             </div>
             <!-- //.navbar-collapse -->
@@ -75,6 +78,8 @@
         <!-- //.container -->
     </nav>
     <!-- //End Navbar -->
+
+
 
     <!-- Begin Intro Section -->
     <section id="intro" class="section section-parallax-yes">
@@ -101,25 +106,77 @@
             <!--//.col-md-12 .video-->
         </div>
 
+        <div id="button-one" class="button-container">
+            <button id="get-a-quote">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     viewBox="0 0 135.3 169.3" style="enable-background:new 0 0 135.3 169.3;" xml:space="preserve">
+                <style type="text/css">
+                    .st0{fill:none;stroke:#bfbfbf;stroke-miterlimit:10;stroke-width:3;}
+                    .st1{fill:#FFFFFF;}
+                    .st2{font-family:'Raleway';}
+                    .st3{font-size:17px;}
+                    .st4{fill:none;stroke:#EA4934;stroke-width:8;stroke-miterlimit:10;}
+                    .st5{fill:none;stroke:#F5F6F7;stroke-width:2;stroke-miterlimit:10;}
+                    .st6{fill:none;stroke:url(#SVGID_1_);stroke-width:1.3;stroke-miterlimit:10;}
+                    .st7{fill:none;stroke:url(#SVGID_2_);stroke-width:1.3;stroke-miterlimit:10;}
+                </style>
+                <circle class="st0" cx="68.4" cy="85.3" r="46.5"/>
+                <text transform="matrix(1 0 0 1 43.8777 80.5437)"><tspan x="0" y="0" class="st1 st2 st3">GET A </tspan><tspan x="-2.2" y="18" class="st1 st2 st3">QUOTE</tspan></text>
+                <path class="st4" d="M47.2,116.2c-10-6.8-16.6-18.2-16.6-31.3c0-20.8,16.9-37.7,37.7-37.7S106,64.1,106,84.9"/>
+                <path class="st5" d="M105.8,91.7c-3.2,17.6-18.6,30.9-37.1,30.9c-5.2,0-10.2-1.1-14.7-3"/>
+                <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="93.5635" y1="23.329" x2="125.0323" y2="23.329">
+                    <stop  offset="0" style="stop-color:#FFFFFF;stop-opacity:0.95"/>
+                    <stop  offset="0.6609" style="stop-color:#FFFFFF;stop-opacity:0.6512"/>
+                    <stop  offset="0.8369" style="stop-color:#FFFFFF;stop-opacity:0"/>
+                </linearGradient>
+                <line class="st6" x1="94.1" y1="45.5" x2="124.5" y2="1.2"/>
+                <linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="13.4639" y1="143.6163" x2="41.1181" y2="143.6163">
+                    <stop  offset="0.1723" style="stop-color:#FFFFFF;stop-opacity:0"/>
+                    <stop  offset="0.3811" style="stop-color:#FFFFFF;stop-opacity:0.6512"/>
+                    <stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0.95"/>
+                </linearGradient>
+                <line class="st7" x1="14" y1="163" x2="40.6" y2="124.2"/>
+                </svg>
+            </button>
+        </div>
+
+
+        <div id="button-two" class="button-container">
+            <button id="our-work">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     viewBox="0 0 135.3 169.3" style="enable-background:new 0 0 135.3 169.3;" xml:space="preserve">
+
+                <circle class="st0" cx="68.4" cy="85.3" r="46.5"/>
+                <text transform="matrix(1 0 0 1 43.8777 80.5437)"><tspan x="5" y="0" class="st1 st2 st3">  OUR</tspan><tspan x="-2.2" y="18" class="st1 st2 st3">WORK</tspan></text>
+                <path class="st4" d="M47.2,116.2c-10-6.8-16.6-18.2-16.6-31.3c0-20.8,16.9-37.7,37.7-37.7S106,64.1,106,84.9"/>
+                <path class="st5" d="M105.8,91.7c-3.2,17.6-18.6,30.9-37.1,30.9c-5.2,0-10.2-1.1-14.7-3"/>
+                <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="93.5635" y1="23.329" x2="125.0323" y2="23.329">
+                    <stop  offset="0" style="stop-color:#FFFFFF;stop-opacity:0.95"/>
+                    <stop  offset="0.6609" style="stop-color:#FFFFFF;stop-opacity:0.6512"/>
+                    <stop  offset="0.8369" style="stop-color:#FFFFFF;stop-opacity:0"/>
+                </linearGradient>
+                <line class="st6" x1="94.1" y1="45.5" x2="124.5" y2="1.2"/>
+                <linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="13.4639" y1="143.6163" x2="41.1181" y2="143.6163">
+                    <stop  offset="0.1723" style="stop-color:#FFFFFF;stop-opacity:0"/>
+                    <stop  offset="0.3811" style="stop-color:#FFFFFF;stop-opacity:0.6512"/>
+                    <stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0.95"/>
+                </linearGradient>
+                <line class="st7" x1="14" y1="163" x2="40.6" y2="124.2"/>
+                </svg>
+            </button>
+        </div>
+
+
         <div class="intro-body text-center">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 intro-content">
-<!--                         <div class="logo">
-                            <h1>R</h1>
-                        </div> -->
-                        <!-- //.logo -->
-                        
-                        <div class="intro-text text-center">
-                            <!-- <h2>Clean, Awesome and Multi-Purpose.</h2> -->
-
-                            <p class="lead">Vinatech Engineering, Inc. is a full-service precision sheet metal fabrication and CNC machining facility. We offer a wide array of services to bring your idea or drawing to  nished product.</p>
+  
+                        <div class="intro-text text-center col-md-5 col-md-offset-7">
+                            <p class="text-overlay">Vinatech Engineering, Inc. is a full-service precision sheet metal fabrication and CNC machining facility. We offer a wide array of services to bring your idea or drawing to a finished product.</p>
                         </div>
                         <!-- //.intro-text -->
 
-                        <div class="page-scroll">
-                            <a href="#who-we-are" class="btn btn-lg btn-rj">Learn More</a>
-                        </div>
                         <!-- //.page-scroll -->
                     </div>
                     <!-- //.intro-content -->
@@ -152,15 +209,16 @@
                     </div>
                     <!-- //.col-md-6 -->
 
-                    <div class="col-md-4 col-md-offset-1">
+                    <div id="welcome-ovelay" class="col-md-5 overlay-header">
                         <div class="about-us-text">
-                            <h1 class="main-title">Welcome</h1>
-                            <h3 class="sub-title">to Vinatech Engineering, Inc.</h3>
-
-                            <div class="page-scroll">
-                                <a href="#" class="btn btn-lg btn-rj">Read More</a>
+                            <div class="page-scroll shifted">
+                                <a href="#meet-the-team" class="btn btn-lg"><i class="fa fa-chevron-circle-down" aria-hidden="true"></i></a>
                             </div>
                             <!-- //.page-scroll -->
+                            <div class="main-title-container">
+                                <h1 class="main-title">Welcome</h1>
+                                <h3 class="sub-title">to Vinatech Engineering, Inc.</h3>
+                            </div>
                         </div>
                         <!-- //.about-us-text -->
                     </div>
@@ -182,13 +240,15 @@
             <div class="section-overlay"></div>
             <div class="container section-content">
                 <div class="row">
-                   <div class="col-md-4 col-md-offset-8">
+                   <div class="col-md-4 col-md-offset-7">
                         <div id="services-container">
-                            <h2 class="main-title overlay-title">Our Services</h2>
-                            <div class="page-scroll">
-                                <a href="#" class="btn btn-lg btn-rj">Read More</a>
+                            <div class="page-scroll shifted">
+                                <a href="#our-services" class="btn btn-lg"><i class="fa fa-chevron-circle-down" aria-hidden="true"></i></a>
                             </div>
                             <!-- //.page-scroll -->
+                            <div class="main-title-container">
+                                <h2 class="main-title overlay-title">Our Services</h2>
+                            </div>
                         </div>
                         <!-- //.services-container -->
                     </div>
@@ -197,9 +257,9 @@
                 <!-- //.row -->
             </div>
             <!--//.section-content-->
-            <div class="container-fluid">
+            <div id="meet-the-team-content" class="container-fluid">
                 <div class="row full-width">
-                    <div id="left-services" class="col-sm-12 col-md-8">
+                    <div id="left-services" class="col-sm-12 col-md-7">
                         <div class="row">
                             <div id="top-services" class="col-md-12 team-item not-right-column top-column">
                                 <div class="team-element">
@@ -258,7 +318,7 @@
                                     </div>
                                     <!-- //.team-inner -->
 
-                                    <img src="<%= asset_path('services_2.jpg')%>" alt="" class="img-responsive"/>
+                                    <img class="image-hack" src="<%= asset_path('services_2.jpg')%>" alt="" class="img-responsive"/>
                                 </div>
                                 <!-- //.team-element -->
                             </div>
@@ -268,7 +328,7 @@
                     </div>
                     <!-- //.col-sm-12 .col-md-8-->
 
-                    <div id="right-services" class="col-sm-12 col-md-4 team-item not-right-column top-column">
+                    <div id="right-services" class="col-sm-12 col-md-5 team-item not-right-column top-column">
                         <div id="content-boxes-text" class="content-boxes style-two top-column clearfix">
                             <ul>
                                 <li class="content-list-text">Precision Sheet Metal Fabrication</li>
@@ -309,50 +369,36 @@
     </section>  
     <!-- //End Our Services Section -->
 
-
-
-    <!-- Begin Fun Fact Section -->
-    <!-- //End Fun Fact Section -->
-
-
-    <!-- Begin Why Us Section -->
-    <!-- //End Why Us Section -->
-
-
-    <!-- Begin Our Main Skills Section -->
-    <!-- //End Our Main Skills Section -->
-
-
     <!-- Begin Our Services Section -->
     <section id="our-services" class="section">
         <div class="section-inner">
             <div class="container section-content">
                 <div class="row">
-                    <div class="col-md-12">
-                        <div class="section-title text-center">
-                            <h3 class="main-title">Our Services</h3>
+                   <div class="get-a-quote-text col-md-5 col-md-offset-7 overlay-header">
+                        <div id="services-container-2">
+                            <div class="page-scroll shifted">
+                                <a href="#intro" class="btn btn-lg"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a>
 
-                            <h4 class="sub-title">We Are Experts In Developing Your Business</h4>
-
-                            <span class="section-line"></span>
+                            </div>
+                            <!-- //.page-scroll -->
+                            <div class="main-title-container">
+                                <h2 class="main-title">We'd Like to Work With You</h2>
+                            </div>
                         </div>
-                        <!-- //.section-title -->
+                        <!-- //.services-container -->
                     </div>
-                    <!-- //.col-md-12 -->
+                    <!-- //.col-md-4 -->
                 </div>    
                 <!-- //.row -->
 
-                <div class="row">
-                    <div class="col-sm-4 col-md-4">
+                <div class="row get-a-quote-content">
+                    <div class="col-sm-4 col-md-2 hack-overlay-text">
                         <div class="funny-boxes float-shadow not-right-column text-center">
                             <span class="funny-boxes-icon">
                                 <i class="fa fa-lightbulb-o"></i>
                             </span>
 
                             <div class="funny-boxes-text">
-                                <h4>Web Design</h4>
-
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
                             </div>
                             <!-- //.funny-boxes-text -->
                         </div>
@@ -360,16 +406,13 @@
                     </div>
                     <!-- //.col-sm-4 col-md-4 -->
 
-                    <div class="col-sm-4 col-md-4">
+                    <div class="col-sm-4 col-md-2 hack-overlay-text">
                         <div class="funny-boxes float-shadow not-right-column text-center">
                             <span class="funny-boxes-icon">
                                 <i class="fa fa-heart-o"></i>
                             </span>
 
                             <div class="funny-boxes-text">
-                                <h4>Graphic Design</h4>
-
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
                             </div>
                             <!-- //.funny-boxes-text -->
                         </div>
@@ -377,24 +420,41 @@
                     </div>
                     <!-- //.col-sm-4 col-md-4 -->
 
-                    <div class="col-sm-4 col-md-4">
+                    <div class="col-sm-4 col-md-2 hack-overlay-text">
                         <div class="funny-boxes float-shadow text-center">
                             <span class="funny-boxes-icon">
                                 <i class="fa fa-flask"></i>
                             </span>
 
                             <div class="funny-boxes-text">
-                                <h4>Branding</h4>
-
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
                             </div>
                             <!-- //.funny-boxes-text -->
                         </div>
                         <!-- //.funny-boxes -->
                     </div>
                     <!-- //.col-sm-4 col-md-4 -->
+                    <div id="bottom-buttons" class="col-sm-12 col-md-5 col-md-offset-1 hack-overlay-text">
+                        <div class="row">
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                        </div>
+                        <div id="hack-buttons" class="row">
+                            <div class="col-md-6 hack-buttons-1">
+                                <button id="submit" class="contact-buttons" type="submit" class="btn btn-lg btn-rj">
+                                    Get a Quote
+                                </button>
+                            </div>
+                            <div class="col-md-6 hack-buttons-1">
+                                <button id="submit" class="contact-buttons" type="submit" class="btn btn-lg btn-rj">
+                                    Our Work
+                                </button>
+                            </div>
+
+                        </div>
+                        <!-- //.form-group -->
+                    </div>
                 </div>
                 <!-- //.row -->
+
             </div>
             <!-- //.section-content -->
         </div>
@@ -415,10 +475,6 @@
     <!-- //End Keep In Touch Section -->
 
 
-
-
-
-
     <!-- Begin Testimonials Section -->
     <!-- //End Testimonials Section -->
 
@@ -428,260 +484,10 @@
 
 
     <!-- Begin Our History Section -->
-    <section id="our-history" class="section">
-        <div class="section-inner">
-            <div class="container section-content">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="section-title text-center">
-                            <h2 class="main-title">Our History</h2>
-
-                            <h3 class="sub-title">Travel Through Time With Us!</h3>
-
-                            <span class="section-line"></span>
-                        </div>
-                        <!-- //.section-title -->
-                    </div>
-                    <!-- //.col-md-12 -->
-                </div>    
-                <!-- //.row -->
-
-                <div class="row">
-                    <div class="col-md-12">
-                        
-                        <!-- Begin Timeline -->
-                        <ul class="timeline">
-                            <li>
-                                <div class="timeline-badge">
-                                    <i class="fa fa-dot-circle-o"></i>
-                                </div>
-                                <!-- //.timeline-badge -->
-
-                                <div class="timeline-panel">
-                                    <div class="timeline-heading">
-                                        <h4 class="timeline-title">Timeline Event</h4>
-
-                                        <img src="<%= asset_path('timeline-image-1.jpg')%>" alt="" class="img-responsive">
-                                    </div>
-                                    <!-- //.timeline-heading -->
-
-                                    <div class="timeline-body">
-                                        <p>Gunung Rinjani adalah gunung yang berlokasi di Pulau Lombok, Nusa Tenggara Barat. Gunung ini merupakan bagian dari Taman Nasional Gunung Rinjani yang memiliki luas sekitar 41.330 ha.</p>
-                                    </div>
-                                    <!-- //.timeline-body -->
-                                </div>
-                                <!-- //.timeline-panel -->
-                            </li>
-
-                            <li class="timeline-inverted">
-                                <div class="timeline-badge">
-                                    <i class="fa fa-dot-circle-o"></i>
-                                </div>
-                                <!-- //.timeline-badge -->
-
-                                <div class="timeline-panel">
-                                    <div class="timeline-heading">
-                                        <h4 class="timeline-title">Timeline Event</h4>
-
-                                        <img src="<%= asset_path('timeline-image-2.jpg')%>" alt="" class="img-responsive">
-                                    </div>
-                                    <!-- //.timeline-heading -->
-
-                                    <div class="timeline-body">
-                                        <p>Gunung ini merupakan gunung favorit bagi pendaki Indonesia karena keindahan pemandangannya. Gunung ini merupakan bagian dari Taman Nasional Gunung Rinjani yang memiliki luas sekitar 41.330 ha.</p>
-                                    </div>
-                                    <!-- //.timeline-body -->
-                                </div>
-                                <!-- //.timeline-panel -->
-                            </li>
-
-                            <li>
-                                <div class="timeline-badge">
-                                    <i class="fa fa-dot-circle-o"></i>
-                                </div>
-                                <!-- //.timeline-badge -->
-
-                                <div class="timeline-panel">
-                                    <div class="timeline-heading">
-                                        <h4 class="timeline-title">Timeline Event</h4>
-
-                                        <img src="<%= asset_path('timeline-image-3.jpg')%>" alt="" class="img-responsive">
-                                    </div>
-                                    <!-- //.timeline-heading -->
-
-                                    <div class="timeline-body">
-                                        <p>Dan akan diusulkan penambahannya sehingga menjadi 76.000 ha ke arah barat dan timur. Secara administratif gunung ini berada dalam wilayah tiga kabupaten: Lombok Timur, Lombok Tengah dan Lombok Barat.</p>
-                                    </div>
-                                    <!-- //.timeline-body -->
-                                </div>
-                                <!-- //.timeline-panel -->
-                            </li>
-
-                            <li class="timeline-inverted">
-                                <div class="timeline-badge">
-                                    <i class="fa fa-dot-circle-o"></i>
-                                </div>
-                                <!-- //.timeline-badge -->
-
-                                <div class="timeline-panel">
-                                    <div class="timeline-heading">
-                                        <h4 class="timeline-title">Timeline Event</h4>
-
-                                        <img src="<%= asset_path('timeline-image-4.jpg')%>" alt="" class="img-responsive">
-                                    </div>
-                                    <!-- //.timeline-heading -->
-
-                                    <div class="timeline-body">
-                                        <p>Gunung Rinjani adalah gunung yang berlokasi di Pulau Lombok, Nusa Tenggara Barat. Gunung ini merupakan bagian dari Taman Nasional Gunung Rinjani yang memiliki luas sekitar 41.330 ha.</p>
-                                    </div>
-                                    <!-- //.timeline-body -->
-                                </div>
-                                <!-- //.timeline-panel -->
-                            </li>
-                        </ul>
-                        <!-- //End Timeline -->
-                    </div>
-                    <!-- //.col-md-12 -->
-                </div>
-                <!-- //.row -->
-            </div>
-            <!-- //.section-content -->
-        </div>
-        <!-- //.section-inner -->
-    </section>
     <!-- //End Our History Section -->
 
 
     <!-- Begin Contact Us Section -->
-    <section id="contact-us" class="section section-bgimage-yes">
-        <div class="section-inner">
-            <div class="section-overlay"></div>
-
-            <div class="container section-content">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="section-title text-center">
-                            <h3 class="main-title">Contact Us</h3>
-
-                            <h4 class="sub-title">Don't Hesitate To Contact Us</h4>
-
-                            <span class="section-line"></span>
-                        </div>
-                        <!-- //.section-title -->
-                    </div>
-                    <!-- //.col-md-12 -->
-                </div>
-                <!-- //.row -->
-
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="form-respond text-center"></div>
-                    </div>
-                    <!-- //.col-md-12 -->
-                </div>
-                <!-- //.row -->
-
-                <div class="row">
-                    <form action="contact/send_mail.php" method="post" name="contact-us-form" id="contact-us-form" class="element-line validate contact-us-form" role="form">
-                        <div class="col-md-5 col-md-offset-1">
-                            <div class="form-group">
-                                <label for="name">Name*</label>
-
-                                <div class="input-group input-group-lg">
-                                    <input type="text" name="name" id="name" class="form-control required" placeholder="Enter name">
-                                </div>
-                                <!-- //.input-group -->
-                            </div>
-                            <!-- //.form-group -->
-
-                            <div class="form-group">
-                                <label for="email">Email*</label>
-
-                                <div class="input-group input-group-lg">
-                                    <input type="email" name="email" id="email" class="form-control required email" placeholder="Enter email">
-                                </div>
-                                <!-- //.input-group -->
-                            </div>
-                            <!-- //.form-group -->
-
-                            <div class="form-group form-group-bottom">
-                                <label for="subject">Subject*</label>
-
-                                <div class="input-group input-group-lg">
-                                    <input type="text" name="subject" id="subject" class="form-control required" placeholder="Enter subject">
-                                </div>
-                                <!-- //.input-group -->
-                            </div>
-                            <!-- //.form-group -->
-                        </div>
-                        <!-- //.col-md-5 col-md-offset-1 -->
-
-                        <div class="col-md-5">
-                            <div class="form-group">
-                                <label for="message">Message*</label>
-
-                                <div class="input-group input-group-lg">
-                                    <textarea name="message" id="message" class="form-control required" placeholder="Enter Message"></textarea>
-                                </div>
-                                <!-- //.input-group -->
-                            </div>
-                            <!-- //.form-group -->
-
-                            <div class="form-group form-group-bottom">
-                                <button id="submit" type="submit" class="btn btn-lg btn-rj">
-                                    Send Message
-                                </button>
-                            </div>
-                            <!-- //.form-group -->
-                        </div>
-                        <!-- //.col-md-5 -->
-                    </form>
-                </div>
-                <!-- //.row -->
-
-                <div class="row">
-                    <div class="col-md-10 col-md-offset-1">
-                        <div class="social-icon-text text-center">
-                            <h2>OR</h2>
-
-                            <h4>Find Us On Social Media!</h4>
-
-                            <ul class="social-icon-list list-unstyled list-inline text-center">
-                                <li>
-                                    <a href="#"><i class="fa fa-facebook"></i></a>
-                                </li>
-
-                                <li>
-                                    <a href="#"><i class="fa fa-twitter"></i></a>
-                                </li>
-
-                                <li>
-                                    <a href="#"><i class="fa fa-google-plus"></i></a>
-                                </li>
-
-                                <li>
-                                    <a href="#"><i class="fa fa-youtube"></i></a>
-                                </li>
-
-                                <li>
-                                    <a href="#"><i class="fa fa-pinterest"></i></a>
-                                </li>
-
-                                <li class="hidden-xs">
-                                    <a href="#"><i class="fa fa-instagram"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- //.social-icon-text -->
-                    </div>
-                    <!-- //.col-md-10 col-md-offset-1 -->
-                </div>
-                <!-- //.row -->
-            </div>
-            <!-- //.section-content -->
-        </div>
-        <!-- //.section-inner -->
-    </section>
     <!-- //End Contact Us Section -->
     
 
@@ -692,23 +498,28 @@
         <section id="footer">
             <div class="container">    
                 <div class="row">
-                    <div class="col-sm-4 col-md-4 footer-column not-right-column">
+
+                    <div class="col-sm-4 col-md-7 footer-column not-right-column">
+                        <div class="footer-text">
+                            <h4>Location</h4>
+                        </div>
+                        <!-- //.footer-text -->
+                    </div>
+                    <!-- //.footer-column -->
+                    <div class="col-sm-4 col-md-5 footer-column not-right-column">
                         <div class="footer-text">
                             <h4>Get In Touch</h4>
-                            
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum, nulla rebds vel pellentesqu</p>
-                            
                             <ul class="icon-list list-unstyled">
                                 <li>
-                                    <i class="fa fa-phone"></i> +622176811
+                                    <i class="fa fa-phone"></i> (858) 635-9655
                                 </li>
                                 
                                 <li>
-                                    <i class="fa fa-envelope-o"></i> no-reply@rinjani.com
+                                    <i class="fa fa-envelope-o"></i> no-reply@email.com
                                 </li>
                                 
                                 <li>
-                                    <i class="fa fa-map-marker"></i> 14374 Salemba Raya, Central Jakarta
+                                    <i class="fa fa-map-marker"></i> 7747 Formula Place, San Diego, Ca 92126
                                 </li>
                                 
                                 <li>
@@ -745,40 +556,6 @@
                         <!-- //.footer-text -->
                     </div>
                     <!-- //.footer-column -->
-
-                    <div class="col-sm-4 col-md-4 footer-column not-right-column">
-                        <div class="footer-text">
-                            <h4>About Us</h4>
-                            
-                            <p>Gunung Rinjani adalah gunung yang berlokasi di Pulau Lombok, Nusa Tenggara Barat. Gunung ini merupakan gunung favorit bagi pendaki Indonesia karena keindahan pemandangannya. Gunung ini merupakan bagian dari Taman Nasional Gunung Rinjani yang memiliki luas sekitar 41.330 ha dan ini akan diusulkan penambahannya sehingga menjadi 76.000 ha ke arah barat dan timur. Secara administratif gunung ini berada dalam wilayah tiga kabupaten: Lombok Timur, Lombok Tengah dan Lombok Barat.</p>
-                        </div>
-                        <!-- //.footer-text -->
-                    </div>
-                    <!-- //.footer-column -->
-
-                    <div class="col-sm-4 col-md-4 footer-column">
-                        <div class="footer-text">
-                            <h4>Newsletter</h4>
-                            
-                            <p>Keep yourself up to date!</p>
-                            
-                            <form role="form" class="newsletter-form">
-                                <div class="form-group">
-                                    <label for="email_address">Email Address*</label>
-                                    <input type="email" id="email_address" class="form-control">
-                                </div>
-                                
-                                <div class="form-group">
-                                    <label for="first_name">First Name</label>
-                                    <input type="text" id="first_name" class="form-control">
-                                </div>
-                                
-                                <button type="submit" class="btn btn-rj">Subscribe</button>
-                            </form>
-                        </div>
-                        <!-- //.footer-text -->
-                    </div>
-                    <!-- //.footer-column -->
                 </div>
                 <!-- //.row -->
             </div>
@@ -787,23 +564,11 @@
         <!-- //End Footer Section -->
 
         <!-- Begin Copyright -->
-        <div id="copyright">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <p>Copyright &copy; 2016 <a href="#">Rinjani.</a></p>
-                    </div>
-                    <!-- //.col-md-12 -->
-                </div>
-                <!-- //.row -->
-            </div>
-            <!-- //.container -->
-        </div>
-        <!-- //End Copyright -->
     </footer>
     <!-- //End Footer -->
 
     <%= javascript_include_tag 'application' %>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
 <!--Plugins JS 
     <script src="assets/plugins/jquery.min.js"></script>
     <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
@@ -820,8 +585,8 @@
     <script src="assets/plugins/jquery-validation/jquery.validate.min.js"></script>
     // <script src="assets/plugins/jquery-countdown/jquery.plugin.min.js"></script>
     <script src="assets/plugins/jquery-countdown/jquery.countdown.min.js"></script>
-  -->
     <script src="assets/plugins/detectmobilebrowser/detectmobilebrowser.js"></script>
+  -->
   <!-- 
 Main JS 
     <script src="assets/js/main.js"></script>
