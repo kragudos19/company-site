@@ -10,7 +10,9 @@ p {
 }
 h2 {
   text-shadow: none;
+
 }
+
 .page-scroll {
   float: left;
 }
@@ -72,7 +74,7 @@ h2 {
 }
 // ----------------INTRO---------------------//
 #intro .intro-body .intro-text {
-  margin-top: 70px;
+  margin-top: 130px;
 }
 
 #intro:before{
@@ -139,14 +141,16 @@ h2 {
   background-size: cover;
   height: auto;
 }
+
+// EDITS HACKED////////////////////////////////////////////
 #myVideo {
   margin-top: -160px;
   margin-left: 0px;
 }
 //
 .navbar-header.page-scroll {
-  width: 1000px;
-  height: 109px;
+  width: 800px;
+  height: 97px;
 }
 .navbar-brand.ui-link {
   height: 97px !important;
@@ -165,9 +169,15 @@ h2 {
 .nav-info > p {
   display: inline-block;
 }
+
+#big-header p {
+  font-size: 6em !important;
+}
 // ----------------ABOUT US---------------------//
 .overlay-buttons {
   margin-top: 15px;
+  position: absolute;
+  left: 118px;
 }
 // #welcome-ovelay {
 //   margin-top: -12%;
@@ -183,7 +193,6 @@ h2 {
 }
 #draft-image {
   position: absolute;
-  top: -15px;
   left: 0;
   z-index: 800px;
   width: 600px;
