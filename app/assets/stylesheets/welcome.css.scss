@@ -4,8 +4,8 @@
 p {
   font-family: Montserrat;
   font-weight: light;
-  font-size: 1em;
-  letter-spacing: 0.02em;
+  font-size: 1.1em;
+  letter-spacing: 0.01em;
   text-shadow: none;
 }
 h2 {
@@ -75,6 +75,7 @@ h2 {
 #intro:before{
   background-image: asset-data-url("grid-overlay.png");
   background-color: transparent;
+  height: 900px;
 }
 #intro .button-container > button {
   background-color: transparent;
@@ -84,7 +85,7 @@ h2 {
 .button-container {
   position: absolute;
   z-index: 1000;
-  width: 187px;
+  width: 200px;
   height: auto;
 }
 #button-one {
@@ -135,8 +136,29 @@ h2 {
   background-size: cover;
   height: auto;
 }
+#myVideo {
+  margin-top: -160px;
+  margin-left: 0px;
+}
 //
+.navbar-header.page-scroll {
+  width: 1000px;
+  height: 109px;
+}
+.navbar-brand.ui-link {
+  height: 97px !important;
+}
+.ui-mobile a img, .ui-mobile fieldset {
+  height: 90px;
+  width: 109px;
 
+}
+.top-hack {
+  margin-top: 10px;
+}
+.nav.navbar-nav.navbar-right {
+  padding-top: 20px;
+}
 // ----------------ABOUT US---------------------//
 .overlay-buttons {
   margin-top: 15px;
