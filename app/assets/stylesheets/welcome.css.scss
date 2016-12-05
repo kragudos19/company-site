@@ -63,6 +63,8 @@ h2 {
 }
 #highlighted-list-item {
   background-color: #ea4934;
+  padding: 2px 6px;
+  margin: 2px 7px;
 }
 .navbar.navbar-fixed-top .navbar-nav > li.active a, .navbar.navbar-fixed-top .navbar-nav > li.active a:hover {
   background-color: #f2f4f4 !important;
@@ -158,6 +160,9 @@ h2 {
 }
 .nav.navbar-nav.navbar-right {
   padding-top: 20px;
+}
+.nav-info > p {
+  display: inline-block;
 }
 // ----------------ABOUT US---------------------//
 .overlay-buttons {
