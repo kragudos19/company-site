@@ -2,9 +2,10 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 p {
-  font-family: Raleway;
-  font-size: 0.92em;
-  letter-spacing: 0.04em;
+  font-family: Montserrat;
+  font-weight: light;
+  font-size: 1em;
+  letter-spacing: 0.02em;
   text-shadow: none;
 }
 h2 {
@@ -28,6 +29,9 @@ h2 {
   background-color: transparent;
   border-color: transparent;
 }
+.ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a .ui-panel-wrapper {
+  background-color: transparent;
+}
 // ----------------NAVBAR---------------------//
 .navbar.navbar-fixed-top {
   background-color: #F2F4F4;
@@ -50,9 +54,12 @@ h2 {
   color: #0f497b;
 }
 .nav.navbar-nav.navbar-right > li > a:hover {
-  border-bottom: 8px solid #f2f4f4;
-  border-right: 0.0px solid #f2f4f4;
-  border-left: 0.0px solid #f2f4f4;
+  border: 3px solid #f2f4f4;
+  // border-right: 0.0px solid #f2f4f4;
+  // border-left: 0.0px solid #f2f4f4;
+  font-size: 1em;
+  background-color: #f2f4f4;
+  color: #20293f;
 }
 #highlighted-list-item {
   background-color: #ea4934;
@@ -64,6 +71,10 @@ h2 {
 // ----------------INTRO---------------------//
 #intro .intro-body .intro-text {
   margin-top: 70px;
+}
+#intro:before{
+  background-image: asset-data-url("grid-overlay.png");
+  background-color: transparent;
 }
 #intro .button-container > button {
   background-color: transparent;
@@ -92,8 +103,10 @@ h2 {
   letter-spacing: 0.02em;
 }
 #intro, #carousel-intro-section {
-  height: 540px;
+  position: fixed;
+  height: 850px;
   width: 100%;
+  z-index: -1;
 }
 #video-container {
   position: absolute; 
@@ -108,6 +121,7 @@ h2 {
   min-height: 100%;
 }
 #intro .intro-body {
+  vertical-align: top;
   z-index: 100;
 }
 #curve {
@@ -135,9 +149,9 @@ h2 {
   z-index: 800;
 }
 #about-us {
-  padding-top: 9%;
+  margin-top: 900px;
   padding-bottom: 4%;
-  height: 600px;
+  // height: 600px;
 }
 #draft-image {
   position: absolute;
