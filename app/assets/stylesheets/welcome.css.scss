@@ -49,9 +49,9 @@ h2 {
   height: 56px;
 }
 .nav.navbar-nav.navbar-right > li > a {
-  font-size: 0.8em;
+  font-size: 1.2em;
   font-weight: 400;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.04em;
   text-shadow: none;
   color: #0f497b;
 }
@@ -92,6 +92,7 @@ h2 {
   z-index: 1000;
   width: 200px;
   height: auto;
+  margin-left: 28px;
 }
 #button-one {
   // top: 170px;
