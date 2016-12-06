@@ -165,20 +165,46 @@ h2 {
   margin-top: 10px;
 }
 .nav.navbar-nav.navbar-right {
-  padding-top: 20px;
+  padding-top: 15px;
 }
 .nav-info > p {
   display: inline-block;
 }
 
 #big-header p {
-  font-size: 6em !important;
+  font-family: 'Magra', sans-serif;
+  font-size: 8em !important;
+  // letter-spacing: -0.01em;
+}
+.intro-text h4 {
+  letter-spacing: 0.1em;
+}
+.intro-text h1 {
+  letter-spacing: 0.03em;
+}
+.navbar-header h1 {
+  font-size: 2.6em;
+  font-family: 'Magra', sans-serif;
+  font-weight: 600;
+}
+.main-title-container h1 {
+  font-size: 4.2em;
+  font-family: 'Magra', sans-serif;
+}
+.fa {
+  margin-bottom: 20px;
+}
+.funny-boxes > .funny-boxes-icon {
+  border: none !important;
+  width: 120px;
+  height: 120px;
 }
 // ----------------ABOUT US---------------------//
 .overlay-buttons {
   margin-top: 15px;
   position: absolute;
   left: 118px;
+  letter-spacing: 0.02em;
 }
 // #welcome-ovelay {
 //   margin-top: -12%;
@@ -352,9 +378,13 @@ footer.footer #footer {
   margin-left: 0px;
   background-color: #377293;
   color: #f2f4f4;
+  border-radius: 30px;
+  height: 50px;
+  text-shadow: none;
 }
-
-
+#hack-buttons .hack-buttons-1 > .contact-buttons {
+  background-color: #ea4934;
+}
 
 .funny-boxes > .funny-boxes-icon {
   border: 1px solid #377293;
